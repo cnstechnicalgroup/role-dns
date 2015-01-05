@@ -56,7 +56,7 @@ dns:
 
 ```yaml
 ---
-- name: common role test
+- name: cns.dns role test
   hosts: all
   roles:
     - cns.dns
