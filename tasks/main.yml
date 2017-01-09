@@ -2,8 +2,6 @@
 - name: Create DNS entries for site
   local_action:
     module: route53
-    aws_access_key: "{{ aws_access_key }}"
-    aws_secret_key: "{{ aws_secret_key }}"
     command: create 
     zone: "{{ item.0.zone }}"
     record: "{{ item.1.record }}"
@@ -12,6 +10,7 @@
     value: "{{ item.1.value }}"
     overwrite: yes
     profile: "{{ aws_profile }}"
+    region: "{{ region }}"
   with_dict: dns
   with_subelements:
     - dns
