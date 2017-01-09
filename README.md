@@ -30,7 +30,7 @@ GPLv2
 Author Information
 ------------------
 
-Created by Sam Morrison [@samcns](https://www.twitter.com/samcns)
+Sam Morrison
 
 Examples
 --------

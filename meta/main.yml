@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: cnstechnicalgroup
+  description: Ansible role to create DNS entries for Route 53 using the ansible route53 module.
+  company: CNS Technical Group, Inc.
+  license: GPL2
+  min_ansible_version: 2.2
+  categories:
+  - cloud, internet, dns
+dependencies: []
