@@ -1,4 +1,3 @@
-# Loop through the dns object variable (see README.md)
 - name: Create DNS entries for site
   local_action:
     module: route53
@@ -10,8 +9,7 @@
     value: "{{ item.1.value }}"
     overwrite: yes
     profile: "{{ aws_profile }}"
-    region: "{{ region }}"
-  with_dict: dns
+#  with_dict: dns
   with_subelements:
-    - dns
+    - "{{ dns }}"
     - entries
